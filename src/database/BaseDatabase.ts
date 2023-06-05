@@ -10,7 +10,7 @@ export abstract class BaseDatabase {
             filename: process.env.DB_FILE_PATH as string,
         },
         useNullAsDefault: true,
-        pool: { 
+        pool: {
             min: 0,
             max: 1,
             afterCreate: (conn: any, cb: any) => {
